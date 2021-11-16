@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Homework-4</title>
+    <title>Homework-5</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -51,7 +51,7 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="order-button">Заказать услугу</button>
+          <button type="button" class="order-button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <section class="hero-list">
@@ -120,6 +120,7 @@
                 width="370"
                 alt="веб-разработка"
               />
+              <h3 class="what-we-do-description">Десктопные приложения</h3>
             </li>
             <li class="what-we-do-list">
               <img
@@ -128,6 +129,7 @@
                 width="370"
                 alt="разработка приложений"
               />
+              <h3 class="what-we-do-description">Мобильные приложения</h3>
             </li>
             <li class="what-we-do-list">
               <img
@@ -136,6 +138,7 @@
                 width="370"
                 alt="дизайн"
               />
+              <h3 class="what-we-do-description">Дизайнерские решения</h3>
             </li>
           </ul>
         </div>
@@ -428,5 +431,20 @@
         </div>
       </section>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <div class="modal-content">
+        <p>
+
+        </p>
+        <button class="modal-button" data-modal-close>
+          <svg class="modal-button-icon">
+            <use href="./img/sprite_close.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
